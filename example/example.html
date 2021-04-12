@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>tcss examples</title>
+		<link rel="stylesheet" href="../tcss.css">
+	</head>
+
+
+	<body class="container-fluid">
+		<div class="wrapper">
+			<h2>This is tcss example page.</h2>
+			<p>tcss is a css file that provides useful simple css classes. I wrote this because i was writing same stuff again and again everytime.<br>I often use this with bootstrap but it works just as well without it.</p>
+
+
+			<a href="https://github.com/cmdtvt/tcss" target="_blank">tcss GitHub</a><br><br>
+			
+			<section>
+				<h4>Wrapper</h4>
+				<p>tcss add .wrapper class that adds a basic wrapper for centered content. All of this content you are reading are centered on the page with it. On mobile or smaller screensizes it takes the fullpage width. Wrappers width can be easily modified with <code>--wrapper-width</code> variable.</p>
+			</section>
+				
+				
+			<div class="box">
+				<h4>Simple Box</h4>
+				<p>Create a simple box by giving an element <code>.box</code> class.</p>
+			</div>
+
+			<div class="box-rounded">
+				<h4>Box with rounded edges.</h4>
+				<p>Add a small rouneded corners to a box with <code>.box-rounded</code></p>
+			</div>
+
+			<div class="box-rounded hoverable">
+				<h4>Box hover effect.</h4>
+				<p>With <code>.hoverable</code> class you can add simple hover effect to an element.</p>
+			</div>
+
+			<div class="box bg-soft-cyan pattern-gene">
+				<h4>Pattern and color</h4>
+				<p>You can apply color and background pattern to boxes. (Pattern images are still in production).
+					<div class="box">
+						<h4>Patterns</h4>
+						<p>Different background patterns.</p>
+						<code>.pattern-gene</code><br>
+						<code>.pattern-tiles</code><br>
+						<code>.pattern-tiles-open</code><br>
+						<code>.pattern-triangles</code><br>
+						<code>.pattern-bricks</code><br>
+					</div>
+
+					<div class="box">
+						<h4>Colors</h4>
+						<p>All colors have hard and soft version. Except <code>.bg-white</code></p>
+						<code>.bg-hard-red</code><br>
+						<code>.bg-soft-red</code><br>
+						<code>.bg-white</code><br>
+						<p>Available colors</p>
+						<code>red</code><br>
+						<code>yellow</code><br>
+						<code>green</code><br>
+						<code>blue</code><br>
+						<code>purple</code><br>
+						<code>pink</code><br>
+						<code>cyan</code><br>
+					</div>
+			</div>
+
+
+			<section>
+				<h4>This is a section</h4>
+				<p>When using section tags small border is added top and bottom of them to seperate content more clearly. This can be removed by changing <code>--item-section-border</code> variable to <code>0px</code> </p>
+
+				<br><br><br><br>
+
+
+				<p>To add proper spacing to an image apply <code>.timage</code> class. This gives same margins as in <code>.box</code> and inputs.<br>To add an shadow filter to a image by apply <code>.timage-float</code></p>
+
+
+				<img src="example-image-1.jpg" class="img-fluid timage timage-float" style="height: 300px;">
+
+				<p>Add simple image hover effect with <code>.timage-hover</code></p>
+
+				<img src="example-image-2.jpg" class="img-fluid timage timage-hover" style="height: 300px;">
+
+				<div class="box">
+					<h4>Ledge arrow hover effect.</h4>
+					<p>Ledge arrow effects can be added by applying class <code>clp-tri-right</code> Other valid directions are right,left,up and down.<br><br>Third image also has <code>.timage-hover</code> class for extra hover effect.</p>
+					<img src="example-image-1.jpg" class="img-fluid bg-white timage clp-tri-right" style="height: 300px;">
+
+					<img src="example-image-1.jpg" class="img-fluid bg-white timage clp-tri-left" style="height: 300px;">
+
+					<img src="example-image-1.jpg" class="img-fluid bg-white timage clp-tri-up timage-hover" style="height: 300px;">
+
+					<img src="example-image-1.jpg" class="img-fluid bg-white timage clp-tri-down" style="height: 300px;">
+					
+				</div>
+
+				
+
+				
+
+			</section>
+
+
+			<section>
+				<div class="box bg-soft-pink hide-mobile">
+					<h4>Hidable content</h4>
+					<p>There are also classes for hiding things on smaller screensizes or desktop. <code>.hide-mobile</code> and <code>.show-mobile</code>. Make your browser smaller to see the effect.</p>
+				</div>
+
+				<div class="box bg-soft-red show-mobile">
+					<h4>Hidable content</h4>
+					<p>There are also classes for hiding things on smaller screensizes or desktop. <code>.hide-mobile</code> and <code>.show-mobile</code>. Make your browser smaller to see the effect.</p>
+					<br>
+					<p>yey you are on smaller screensize if you are seeing this!</p>
+				</div>
+
+				<div class="box box-rounded">
+					<span class="icon-close"></span>
+					<h4>My Cool Form</h4>
+					<p>All inputs are spaced and by adding <code>.icon-close</code> to some element X is added to it and it is styled as close button.</p>
+					<form action="#" method="POST">
+						<input type="text" name="">
+						<input type="text" name="">
+						<input type="text" name="" placeholder="I'm a input!">
+
+						<textarea rows="10" cols="10"></textarea>
+
+						<button type="submit">Submit</button>
+					</form>
+				</div>
+			</section>
+
+			<div class=" ">
+				<h4>Removing styles.</h4>
+				<p>You can remove styling from some elements. Buttons and Lists.<br></p>
+				<button class="remove-style-button">This text is a button which has <code>.remove-style-button</code></button><br>
+				<button>Without the class button can look like this.</button>
+			</div>
+
+
+			<br><br><br><br><br><br><br><br>
+			<div class="box">
+				<h4>For Bootstrap</h4>
+				<p>There are few classes that i usualy use with bootstrap so they are included here too.<br><code>.btn-full</code> Make button full width (Just applies <code>width: 100%;</code>)</p>
+			</div>
+
+			<div class="box">
+				<h4>tcss GitHub</h4>
+				<a href="https://github.com/cmdtvt/tcss" target="_blank">Link</a>
+			</div>
+
+
+		</div>
+	</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</html>
